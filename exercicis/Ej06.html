@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mi pagina web</title>
+        <link href="images/ITB_Logo_417.ico" rel="icon">
+    </head>
+    <body>
+        <form action=".">
+            <fieldset>
+                <legend>Ficha de la película</legend>
+                <label>Título </label><input type="text"><br>
+                <label>Director </label><input type="text"><br>
+                <label>Fecha de estreno </label><input type="date"><br>
+                <label>Poster </label><input type="file"><br>
+                <label>Versión</label><br>
+                <input type="checkbox" name="version"><label>IMAX</label>
+                <input type="checkbox" name="version"><label>3D</label>
+                <input type="checkbox" name="version"><label>Full HD</label><br>
+                <label>Clasificación</label><br>
+                <input type="radio" name="clasificacion"><label>TP</label>
+                <input type="radio" name="clasificacion"><label>+12</label>
+                <input type="radio" name="clasificacion"><label>+15</label>
+                <input type="radio" name="clasificacion"><label>+18</label>
+            </fieldset>
+            <fieldset>
+                <legend>Ficha de proyección</legend>
+                <label>Sala </label><br>
+                <select>
+                    <option value="1">cine de barrio</option>
+                    <option value="2">Cines Yelmo</option>
+                    <option value="3">Cinesa</option>
+                    <option value="4">Cines Full HD</option>
+                </select><br>
+                <textarea placeholder="Escribe una breve sinopsis"></textarea><br>
+                <select>
+                    <option value="1">Inglés</option>
+                    <option value="2">Español</option>
+                    <option value="3">Catalán</option>
+                </select><br>
+                <label>Sesión </label><input type="time"><br>
+                <label>Días de proyección</label><br>
+                <listbox>
+                    <li>Lunes</li>
+                    <li>Martes</li>
+                    <li>Miercoles</li>
+                    <li>Jueves</li>
+                </listbox>
+                <label>Elije un color de fondo </label><input type="color"><br>
+                <label>Puntuación del públco </label><progress value="75" max="100"></progress>
+            </fieldset>
+        </form>
+    </body>
+</html>
