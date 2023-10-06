@@ -4,22 +4,22 @@
     <head>
         <meta charset="UTF-8">
         <title>Mi formulario</title>
-        <link href="images/ITB_Logo_417.ico" rel="icon">
+        <link href="../image/ITB_Logo_417.ico" rel="icon">
     </head>
     <body>
-        <form action=".">
+        <form action="" method="post" enctype="multipart/form-data">
             <fieldset>
                 <legend>Ficha de la película</legend>
                 <label>Título </label><input type="text"><br>
                 <label>Director </label><input type="text"><br>
                 <label>Fecha de estreno </label><input type="date"><br>
                 <label>Poster </label><input type="file"><br>
-                <label>Versión</label><br>
+                <label>Versión:</label><br>
                 <input type="checkbox" name="version"><label>IMAX</label>
                 <input type="checkbox" name="version"><label>3D</label>
                 <input type="checkbox" name="version"><label>Full HD</label><br>
-                <label>Clasificación</label><br>
-                <input type="radio" name="clasificacion"><label>TP</label>
+                <label>Clasificación:</label><br>
+                <input type="radio" name="clasificacion" checked><label>TP</label>
                 <input type="radio" name="clasificacion"><label>+12</label>
                 <input type="radio" name="clasificacion"><label>+15</label>
                 <input type="radio" name="clasificacion"><label>+18</label>
@@ -40,13 +40,16 @@
                     <option value="3">Catalán</option>
                 </select><br>
                 <label>Sesión </label><input type="time"><br>
-                <label>Días de proyección</label><br>
-                <listbox>
-                    <li>Lunes</li>
-                    <li>Martes</li>
-                    <li>Miercoles</li>
-                    <li>Jueves</li>
-                </listbox>
+                <label>Días de proyección:</label><br>
+                <select multiple size="5">
+                    <option value="1">Lunes</option>
+                    <option value="2">Martes</option>
+                    <option value="3">Miercoeles</option>
+                    <option value="4">Jueves</option>
+                    <option value="5">Viernes</option>
+                    <option value="6">Sabado</option>
+                    <option value="7">Domingo</option>
+                </select><br>
                 <label>Elije un color de fondo </label><input type="color"><br>
                 <label>Puntuación del públco </label><progress value="75" max="100"></progress>
             </fieldset>
