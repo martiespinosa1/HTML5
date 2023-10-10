@@ -1,5 +1,10 @@
-header{
-    background-color: #0A91AB
+* {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#encabezado{
+    background-color: #0A91AB;
 }
 
 h1 {
@@ -12,12 +17,27 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     background-color: #FFC045;
+    color: #0A91AB;
+    padding: 1%;
+}
+
+#main {
+    width: 80%;
+    margin-left: 10%;
+    background-color: #caebf9;
+}
+
+#videojuegos {
+    display: flex;
+    padding-top: 5px;
+    color: #0A91AB;
 }
 
 #lista {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding-top: 25px;
 }
 
 .videojuego {
@@ -26,15 +46,69 @@ h1 {
     border-color: #FFC045;
     width: 25%;
     border-radius: 5px;
-    margin: 5px;
+    margin: 15px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden
+    flex-direction: column;
+    overflow: hidden;
 }
 
 img {
     flex-shrink: 0;
     min-width: 100%;
-    min-height: 100%
+    min-height: 30%
+}
+
+.titulo_videojuego {
+    text-align: left;
+    color: #FFC045;
+    font-size: 20px;
+}
+
+.descripcion {
+    font-size: 12px;
+}
+
+.mas_info {
+    font-size: 12px;
+    width: 30%;
+    background-color: #FFC045;
+    border: 0;
+    border-radius: 5px;
+}
+
+aside {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(127, 225, 255);
+    width: 25%;
+    margin-left: 5.5%;
+    border: 1px dashed black;
+    border-radius: 5px;
+
+}
+
+#parte2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#tips_content {
+    font-size: 12px;
+}
+
+#noticias {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(127, 225, 255);
+    width: 57%;
+    margin-left: 70px;
+    border: 1px dashed black;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #847c6f;
+    padding: 20px;
 }
