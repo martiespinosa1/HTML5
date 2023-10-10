@@ -1,0 +1,40 @@
+header{
+    background-color: #0A91AB
+}
+
+h1 {
+    text-align: center;
+    color: #FFC045;
+    padding: 5%;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #FFC045;
+}
+
+#lista {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.videojuego {
+    border: 1px;
+    border-style: dashed;
+    border-color: #FFC045;
+    width: 25%;
+    border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
