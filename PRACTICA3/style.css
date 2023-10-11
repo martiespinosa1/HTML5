@@ -1,7 +1,8 @@
 * {
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Kanit', 'Maven Pro', Helvetica, Arial, sans-serif;
 }
+
 
 #encabezado{
     background-color: #0A91AB;
@@ -19,6 +20,14 @@ h1 {
     background-color: #FFC045;
     color: #0A91AB;
     padding: 1%;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+main {
+    background-color: rgb(131, 152, 160);
 }
 
 #main {
@@ -27,10 +36,16 @@ h1 {
     background-color: #caebf9;
 }
 
-#videojuegos {
+main div p {
+    padding: 10px;
+}
+
+.titulos_apartados { 
     display: flex;
     padding-top: 5px;
     color: #0A91AB;
+    font-size: 20px;
+    padding: 10px;
 }
 
 #lista {
@@ -41,7 +56,8 @@ h1 {
 }
 
 .videojuego {
-    border: 1px;
+    background-color: white;
+    border: 2px;
     border-style: dashed;
     border-color: #FFC045;
     width: 25%;
@@ -61,19 +77,26 @@ img {
 .titulo_videojuego {
     text-align: left;
     color: #FFC045;
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .descripcion {
     font-size: 12px;
+    color: #8A8070;
 }
 
 .mas_info {
     font-size: 12px;
-    width: 30%;
+    width: 17%;
     background-color: #FFC045;
     border: 0;
     border-radius: 5px;
+    padding: 3px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: 5px;
+    margin-bottom: 5px;
 }
 
 aside {
@@ -82,7 +105,7 @@ aside {
     background-color: rgb(127, 225, 255);
     width: 25%;
     margin-left: 5.5%;
-    border: 1px dashed black;
+    border: 2px dashed black;
     border-radius: 5px;
 
 }
@@ -103,9 +126,16 @@ aside {
     flex-wrap: wrap;
     background-color: rgb(127, 225, 255);
     width: 57%;
-    margin-left: 70px;
-    border: 1px dashed black;
+    margin-left: 100px;
+    border: 2px dashed black;
     border-radius: 5px;
+}
+
+#parte3 {   
+    background-color: antiquewhite;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
 }
 
 footer {
