@@ -21,9 +21,6 @@ h1 {
     color: #0A91AB;
     padding: 1%;
     font-weight: bold;
-    position: fixed;
-    width: 100%;
-    top: 0;
 }
 
 main {
@@ -42,17 +39,21 @@ main div p {
 
 .titulos_apartados { 
     display: flex;
-    padding-top: 5px;
     color: #0A91AB;
     font-size: 20px;
     padding: 10px;
+}
+
+#texto_videojuegos {
+    margin-left: 5%;
+    padding-top: 25px;
 }
 
 #lista {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding-top: 25px;
+    padding-top: 5px;
 }
 
 .videojuego {
@@ -88,7 +89,7 @@ img {
 
 .mas_info {
     font-size: 12px;
-    width: 17%;
+    width: 24%;
     background-color: #FFC045;
     border: 0;
     border-radius: 5px;
@@ -101,13 +102,12 @@ img {
 
 aside {
     display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(127, 225, 255);
+    flex-direction: column;
+    background-color: rgba(127, 225, 255, 0.349);
     width: 25%;
     margin-left: 5.5%;
     border: 2px dashed black;
     border-radius: 5px;
-
 }
 
 #parte2 {
@@ -122,20 +122,64 @@ aside {
 }
 
 #noticias {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(127, 225, 255);
+    
+    background-color: rgba(127, 225, 255, 0.349);
     width: 57%;
-    margin-left: 100px;
-    border: 2px dashed black;
+    margin-left: 65px;
     border-radius: 5px;
+}
+
+#lista_noticias {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 600px;
+}
+
+.noticia {
+    background-color: white;
+    border: 2px solid #0A91AB;
+    width: 44%;
+    height: 44%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;   
+}
+
+#texo_noticias {
+    justify-content: center;
+}
+
+.fecha_noticia {
+    font-size: 8px;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.resumen_noticia {
+    font-size: 10px;
+    padding-top: 0;
 }
 
 #parte3 {   
     background-color: antiquewhite;
-    width: 100%;
+    width: 98%;
     padding: 10px;
     text-align: center;
+}
+
+#texto_ranking {
+    justify-content: center;
+}
+
+#ranking {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fotos_personas {
+    border-radius: 100px;
 }
 
 footer {
