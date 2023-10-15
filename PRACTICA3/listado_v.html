@@ -7,13 +7,146 @@
     <meta name="descripcion" content="La Pràctica 3 de HTML i CSS va sobre videojuegos">
     <link rel="icon" type="image/ico" href="img/favico.ico">
     <link rel="stylesheet" type="text/css" href="style.css"></link>
+
+    <style>
+        #container_principal {
+            display: flex;
+            flex-wrap: wrap;            
+        }
+
+        .videojuego_listado {
+            /* background-color: aqua; */
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            margin: 5%;
+            border: 2px solid #0A91AB;
+            border-radius: 12px;
+            /* padding: 1%; */
+        }
+
+        img {
+            border-radius: 10px;
+            width: 250px;
+        }
+
+        .videojuego_texto {
+            padding: 1%;
+        }
+
+        h2 {
+            font-size: 23px;
+            color: #0A91AB;
+            padding-left: 1%;
+        }
+
+        p {
+            color: #8A8070;
+            padding: 1%;
+        }
+
+        .paginacion {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .paginacion p {
+            padding: 5px 10px;
+            margin: 0 5px;
+            text-decoration: none;
+            color: #000;
+            border: 1px solid #000;
+            border-radius: 5px;
+        }
+
+        .paginacion p:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+    </style>
 </head>
 <body>
     <header id="encabezado">    
         <h1>Listado de videojuegos</h1>
+        <hr noshade="noshade" size="3px"/>
     </header>
     <main>
-        
+        <div id="menu">
+            <p>MO4PLAY</p>        
+            <p>LEARNING</p>
+            <p>PLAY</p>
+            <p>OTHERS</p>
+        </div>
+        <hr noshade="noshade" size="3px"/>
+        <div id="container_principal">
+            <div id="list">
+                <div class="videojuego_listado">                    
+                    <figure>
+                        <img src="img/mine.jpg" alt="mine">                        
+                    </figure>
+                    <div class="videojuego_texto">
+                        <h2>Minecraft</h2>
+                        <p>Minecraft es un videojuego de construcción de tipo «mundo abierto» o en inglés sandbox creado originalmente por el sueco Markus Persson (conocido comúnmente como «Notch»), que creo posteriormente Mojang Studios (actualmente parte de Microsoft).</p>
+                    </div>
+                </div>
+                <div class="videojuego_listado">
+                    <figure>
+                        <img src="img/mine.jpg" alt="mine">
+                    </figure>
+                    <div class="videojuego_texto">
+                        <h2>Minecraft</h2>
+                        <p>Minecraft es un videojuego de construcción de tipo «mundo abierto» o en inglés sandbox creado originalmente por el sueco Markus Persson (conocido comúnmente como «Notch»), que creo posteriormente Mojang Studios (actualmente parte de Microsoft).</p>
+                    </div>
+                </div>
+                <div class="videojuego_listado">
+                    <figure>
+                        <img src="img/mine.jpg" alt="mine">
+                    </figure>
+                    <div class="videojuego_texto">
+                        <h2>Minecraft</h2>
+                        <p>Minecraft es un videojuego de construcción de tipo «mundo abierto» o en inglés sandbox creado originalmente por el sueco Markus Persson (conocido comúnmente como «Notch»), que creo posteriormente Mojang Studios (actualmente parte de Microsoft).</p>
+                    </div>
+                </div>
+                <div class="videojuego_listado">
+                    <figure>
+                        <img src="img/mine.jpg" alt="mine">
+                    </figure>
+                    <div class="videojuego_texto">
+                        <h2>Minecraft</h2>
+                        <p>Minecraft es un videojuego de construcción de tipo «mundo abierto» o en inglés sandbox creado originalmente por el sueco Markus Persson (conocido comúnmente como «Notch»), que creo posteriormente Mojang Studios (actualmente parte de Microsoft).</p>
+                    </div>
+                </div>
+                <div class="videojuego_listado">
+                    <figure>
+                        <img src="img/mine.jpg" alt="mine">
+                    </figure>
+                    <div class="videojuego_texto">
+                        <h2>Minecraft</h2>
+                        <p>Minecraft es un videojuego de construcción de tipo «mundo abierto» o en inglés sandbox creado originalmente por el sueco Markus Persson (conocido comúnmente como «Notch»), que creo posteriormente Mojang Studios (actualmente parte de Microsoft).</p>
+                    </div>
+                </div>
+                <div class="videojuego_listado">
+                    <figure>
+                        <img src="img/mine.jpg" alt="mine">
+                    </figure>
+                    <div class="videojuego_texto">
+                        <h2>Minecraft</h2>
+                        <p>Minecraft es un videojuego de construcción de tipo «mundo abierto» o en inglés sandbox creado originalmente por el sueco Markus Persson (conocido comúnmente como «Notch»), que creo posteriormente Mojang Studios (actualmente parte de Microsoft).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="paginacion">
+                <p class="prev">Anterior</p>
+                <p class="page">1</p>
+                <p class="page">2</p>
+                <p class="page">3</p>
+                <p class="page">4</p>
+                <p class="page">5</p>
+                <p class="next">Siguiente</p>
+            </div>              
+        </div>        
     </main>
 </body>
 </html>
