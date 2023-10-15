@@ -72,7 +72,7 @@ h1 {
     text-align: center;
     color: #FFC045;
     padding: 3%;
-    font-size: 100px;
+    font-size: 80px;
 }
 
 #menu {
@@ -82,18 +82,22 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     background-color: #FFC045;
-    padding: 1%;
+    padding: 1% 30%;
 }
 
 main {
-    background-color: rgb(180, 198, 205);
+    background-color: #f7f5f3;
 }
 
 #main {
     width: 80%;
     margin-left: 10%;
-    /* background-color: #caebf9; */
+    background-color: #ffffff;
+    border-radius: 25px;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
+
 
 #menu p {
     padding: 5px;
@@ -124,7 +128,7 @@ main {
 
 .videojuego {
     background-color: white;
-    border: 2px;
+    border: 1.5px;
     border-style: dashed;
     border-color: #FFC045;
     width: 25%;
@@ -146,11 +150,14 @@ img {
     color: #FFC045;
     font-size: 16px;
     font-weight: bold;
+    padding-left: 2.5%;
+    padding-top: 2.5%;
 }
 
 .descripcion {
     font-size: 12px;
     color: #8A8070;
+    padding: 2.5%;
 }
 
 .mas_info {
@@ -226,7 +233,7 @@ aside {
 
 .resumen_noticia {
     font-size: 10px;
-    padding-top: 0;
+    padding: 2.5%
 }
 
 #boton_noticia {
@@ -245,18 +252,51 @@ aside {
 
 #texto_ranking {
     justify-content: center;
+    margin-bottom: 1%;
 }
 
 #ranking {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 3%;
 }
 
 .fotos_personas {
     border-radius: 100px;
 }
 
+.nombres_personas {
+    color: #FFC045;
+}
+
+.puntuacion {
+    font-size: 10px;
+}
+
 footer {
-    /* background-color: #847c6f; */
-    padding: 20px;
+    background-color: #847c6f;
+    padding: 1% 14%;
+}
+
+#footer_superior {
+    display: flex;
+    justify-content: space-between;
+}
+
+#rrss {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    font-size: 14px;
+}
+
+#direccion {
+    text-align: right;
+    font-size: 14px;
+    font-style: italic;
+}
+
+#copy {
+    text-align: center;
+    font-size: 11px;
 }
