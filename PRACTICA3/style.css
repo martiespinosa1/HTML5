@@ -94,8 +94,7 @@ main {
     margin-left: 10%;
     background-color: #ffffff;
     border-radius: 25px;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 5%  auto;
 }
 
 
@@ -115,7 +114,7 @@ main {
 }
 
 #texto_videojuegos {
-    margin-left: 5%;
+    margin-left: 1%;
     padding-top: 25px;
 }
 
@@ -131,7 +130,7 @@ main {
     border: 1.5px;
     border-style: dashed;
     border-color: #FFC045;
-    width: 25%;
+    width: 30%;
     border-radius: 5px;
     margin: 15px;
     display: flex;
@@ -162,7 +161,7 @@ img {
 
 .mas_info {
     font-size: 12px;
-    width: 24%;
+    width: 22%;
     background-color: #FFC045;
     border: 0;
     border-radius: 5px;
@@ -177,10 +176,15 @@ aside {
     display: flex;
     flex-direction: column;
     background-color: rgba(127, 225, 255, 0.349);
-    width: 25%;
-    margin-left: 5.5%;
-    border: 2px dashed black;
+    width: 30%;
+    margin-left: 1.5%;
+    border: 1.5px dashed black;
     border-radius: 5px;
+    align-items: center;
+}
+
+.trucos {
+    font-size: 11px;
 }
 
 #parte2 {
@@ -195,11 +199,9 @@ aside {
 }
 
 #noticias {
-    
-    /* background-color: rgba(127, 225, 255, 0.349); */
-    width: 57%;
-    margin-left: 65px;
-    border-radius: 5px;
+    background-color: rgba(127, 225, 255, 0.349);
+    width: 63.7%;
+    margin-left: 30px;
 }
 
 #lista_noticias {
@@ -211,8 +213,8 @@ aside {
 
 .noticia {
     background-color: white;
-    border: 2px solid #0A91AB;
-    width: 44%;
+    border: 1.5px solid #0A91AB;
+    width: 47%;
     height: 44%;
     border-radius: 5px;
     display: flex;
@@ -223,6 +225,16 @@ aside {
 
 #texo_noticias {
     justify-content: center;
+}
+
+.titulo_noticia {
+    text-align: left;
+    color: #FFC045;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 2.5%;
+    padding-top: 2.5%;
+    text-align: center;
 }
 
 .fecha_noticia {
@@ -238,7 +250,7 @@ aside {
 
 #boton_noticia {
     position: absolute;
-    bottom: 99px;
+    bottom: 136px;
     right: 0;
 
 }
