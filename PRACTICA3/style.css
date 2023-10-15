@@ -45,6 +45,18 @@ table {
 /* FIN RESET */
 
 
+@font-face {
+  font-family: 'Kanit';
+  src: url('fonts/Kanit/Kanit-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf') format('truetype');
+}
+
+
+
 * {
     margin: 0;
     font-family: 'Kanit', 'Maven Pro', Helvetica, Arial, sans-serif;
@@ -53,12 +65,13 @@ table {
 
 #encabezado{
     background-color: #0A91AB;
+    font-family: 'Kanit', 'Maven Pro', Helvetica, Arial, sans-serif;
 }
 
 h1 {
     text-align: center;
     color: #FFC045;
-    padding: 5%;
+    padding: 3%;
     font-size: 100px;
 }
 
@@ -69,9 +82,7 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     background-color: #FFC045;
-    color: #0A91AB;
     padding: 1%;
-    font-weight: bold;
 }
 
 main {
@@ -84,8 +95,12 @@ main {
     /* background-color: #caebf9; */
 }
 
-main div p {
-    padding: 10px;
+#menu p {
+    padding: 5px;
+}
+
+#menu p:hover {
+  color: #0A91AB;
 }
 
 .titulos_apartados { 
