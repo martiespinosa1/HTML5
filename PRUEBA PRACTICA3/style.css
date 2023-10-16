@@ -328,7 +328,7 @@ footer {
 
 
 
-.checkbox{
+#checkbox{
     position: absolute;
     top: -30px;
     left: 150%;
@@ -344,7 +344,7 @@ footer {
     transition: 0.5s;            
 }
 
-.checkbox::before{
+#checkbox::before{
     height: 32px;
     width: 32px;
     position: absolute;
@@ -358,22 +358,16 @@ footer {
 
 }
 
-.checkbox:checked{
+#checkbox:checked{
     background: #333;
 }
 
-
-.checkbox:checked + #menu {
-    background-color: #b32929;
-}
-
-
-.checkbox:checked::before{
+#checkbox:checked::before{
     left: 32px;
     background: linear-gradient(to bottom,#eaeaea,#f9f9f9);            
 }
 
-.checkbox::after{
+#checkbox::after{
     position: absolute;
     top: 80px;
     left: 160px;
@@ -382,6 +376,6 @@ footer {
     transition: 0.25s;
 }
 
-.checkbox:checked::after{
+#checkbox:checked::after{
     background: #f8f8f8;
 }   
