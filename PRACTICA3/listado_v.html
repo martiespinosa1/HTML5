@@ -11,7 +11,8 @@
     <style>
         #container_principal {
             display: flex;
-            flex-wrap: wrap;            
+            flex-wrap: wrap;
+            justify-content: center;           
         }
 
         .videojuego_listado {
@@ -49,19 +50,34 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            padding-bottom: 5%;
         }
 
         .paginacion p {
             padding: 5px 10px;
-            margin: 0 5px;
+            /* margin: 0 5px; */ 
             text-decoration: none;
             color: #000;
-            border: 1px solid #000;
-            border-radius: 5px;
+            border: 1px solid #e4e4e4;
+            /* border-radius: 5px; */ 
+            color: #0A91AB;
+        }
+
+        #page1 {
+            background-color: #0A91AB;
+            color: #fff;
+        }
+
+        .prev {
+            border-radius: 5px 0 0 5px;
+        }
+
+        .next {
+            border-radius: 0 5px 5px 0;
         }
 
         .paginacion p:hover {
-            background-color: #000;
+            background-color: #0A91AB;
             color: #fff;
         }
 
@@ -136,17 +152,34 @@
                         <p>Minecraft es un videojuego de construcción de tipo «mundo abierto» o en inglés sandbox creado originalmente por el sueco Markus Persson (conocido comúnmente como «Notch»), que creo posteriormente Mojang Studios (actualmente parte de Microsoft).</p>
                     </div>
                 </div>
+            </div>                       
+        </div>
+        <div class="paginacion">
+            <p class="prev">Anterior</p>
+            <p class="page" id="page1">1</p>
+            <p class="page">2</p>
+            <p class="page">3</p>
+            <p class="page">4</p>
+            <p class="page">5</p>
+            <p class="next">Siguiente</p>
+        </div>   
+        <footer>
+            <div id="footer_superior">
+                <div id="rrss">
+                    <p>FACEBOOK</p>        
+                    <p>X</p>
+                    <p>INSTAGRAM</p>
+                    <p>RRSS</p>
+                </div>
+                <div id="direccion">
+                    <p>Carrer d'Aiguablava 121</p>
+                    <p>08033 Barcelona</p>
+                </div>
             </div>
-            <div class="paginacion">
-                <p class="prev">Anterior</p>
-                <p class="page">1</p>
-                <p class="page">2</p>
-                <p class="page">3</p>
-                <p class="page">4</p>
-                <p class="page">5</p>
-                <p class="next">Siguiente</p>
-            </div>              
-        </div>        
+            <div id="footer_inferior">
+                <p id="copy">Copyright © 2023 - 2023</p>
+            </div>
+        </footer>        
     </main>
 </body>
 </html>
