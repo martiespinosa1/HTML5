@@ -1,0 +1,387 @@
+/* INICIO RESER */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* FIN RESET */
+
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('fonts/Kanit/Kanit-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf') format('truetype');
+}
+
+
+
+* {
+    margin: 0;
+    font-family: 'Kanit', 'Maven Pro', Helvetica, Arial, sans-serif;
+}
+
+
+#encabezado{
+    background-color: #0A91AB;
+    font-family: 'Kanit', 'Maven Pro', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #FFC045;
+    padding: 3%;
+    font-size: 80px;
+}
+
+#menu_arriba {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #FFC045;
+    padding: 1% 30%;
+}
+
+#menu {    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main {
+    background-color: #f7f5f3;
+}
+
+#container_principal {
+    width: 80%;
+    margin-left: 10%;
+    background-color: #ffffff;
+    border-radius: 25px;
+    margin: 5%  auto;
+}
+
+
+#menu p {
+    padding: 5px;
+}
+
+#menu p:hover {
+  color: #0A91AB;
+}
+
+.titulos_apartados { 
+    display: flex;
+    color: #0A91AB;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#texto_videojuegos {
+    margin-left: 1%;
+    padding-top: 25px;
+}
+
+#lista {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 5px;
+}
+
+.videojuego {
+    background-color: white;
+    border: 1.5px;
+    border-style: dashed;
+    border-color: #FFC045;
+    width: 30%;
+    border-radius: 5px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 30%
+}
+
+.titulo_videojuego {
+    text-align: left;
+    color: #FFC045;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 2.5%;
+    padding-top: 2.5%;
+}
+
+.descripcion {
+    font-size: 12px;
+    color: #8A8070;
+    padding: 2.5%;
+    line-height: 1.5;
+}
+
+.mas_info {
+    font-size: 12px;
+    width: 22%;
+    background-color: #FFC045;
+    border: 0;
+    border-radius: 5px;
+    padding: 3px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(127, 225, 255, 0.349);
+    width: 30%;
+    margin-left: 1.5%;
+    border: 1.5px dashed black;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.trucos {
+    font-size: 11px;
+}
+
+#parte2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#tips_content {
+    font-size: 12px;
+}
+
+#noticias {
+    background-color: rgba(127, 225, 255, 0.349);
+    width: 63.7%;
+    margin-left: 30px;
+}
+
+#lista_noticias {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 600px;
+}
+
+.noticia {
+    background-color: white;
+    border: 1.5px solid #0A91AB;
+    width: 47%;
+    height: 44%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;   
+    position: relative;
+}
+
+#texo_noticias {
+    justify-content: center;
+}
+
+.titulo_noticia {
+    text-align: left;
+    color: #FFC045;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 2.5%;
+    padding-top: 2.5%;
+    text-align: center;
+}
+
+.fecha_noticia {
+    font-size: 8px;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.resumen_noticia {
+    font-size: 10px;
+    padding: 2.5%;
+    line-height: 1.5;
+}
+
+#boton_noticia {
+    position: absolute;
+    bottom: 136px;
+    right: 0;
+
+}
+
+#parte3 {   
+    /* background-color: antiquewhite; */
+    width: 98%;
+    padding: 10px;
+    text-align: center;
+}
+
+#texto_ranking {
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+#ranking {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3%;
+}
+
+.fotos_personas {
+    border-radius: 100px;
+}
+
+.nombres_personas {
+    color: #FFC045;
+}
+
+.puntuacion {
+    font-size: 10px;
+}
+
+footer {
+    background-color: #847c6f;
+    padding: 1% 14%;
+}
+
+#footer_superior {
+    display: flex;
+    justify-content: space-between;
+}
+
+#rrss {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    font-size: 14px;
+}
+
+#direccion {
+    text-align: right;
+    font-size: 14px;
+    font-style: italic;
+}
+
+#copy {
+    text-align: center;
+    font-size: 11px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.checkbox{
+    position: absolute;
+    top: -30px;
+    left: 150%;
+    height: 32px;
+    width: 64px;
+    background: #fff;
+    appearance: none;
+    border-radius: 160px;
+    position: relative;
+    right: 0;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;            
+}
+
+.checkbox::before{
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: #333;
+    border-radius: 100%;
+    transform: scale(0.9);
+    transition: 0.25s;
+
+}
+
+.checkbox:checked{
+    background: #333;
+}
+
+
+.checkbox:checked + #menu {
+    background-color: #b32929;
+}
+
+
+.checkbox:checked::before{
+    left: 32px;
+    background: linear-gradient(to bottom,#eaeaea,#f9f9f9);            
+}
+
+.checkbox::after{
+    position: absolute;
+    top: 80px;
+    left: 160px;
+    z-index: -1;
+    transform: translate(-50%,-50%);
+    transition: 0.25s;
+}
+
+.checkbox:checked::after{
+    background: #f8f8f8;
+}   
