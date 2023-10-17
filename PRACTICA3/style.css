@@ -104,7 +104,7 @@ main {
     color: inherit;
 }
 
-#menu p:hover {
+#menu a:hover {
   color: #0A91AB;
 }
 

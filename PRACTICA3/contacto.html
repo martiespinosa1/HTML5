@@ -7,6 +7,42 @@
     <meta name="descripcion" content="La Pràctica 3 de HTML i CSS va sobre videojuegos">
     <link rel="icon" type="image/ico" href="img/favico.ico">
     <link rel="stylesheet" type="text/css" href="style.css"></link>
+
+    <style>
+
+        aside {
+            width: 30%;
+            height: 50%;
+            margin-left: auto;
+            padding: 10px;
+            background-color: rgba(255, 166, 0, 0.219);
+            border: 2px solid orange;
+            border-radius: 25px;
+        }
+
+        input {
+            width: 40%;
+            margin: 2%;
+            padding: 1%;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            margin: 2%;
+            padding: 1%;
+            width: 89%;
+            height: 90px;
+            resize: vertical;
+            min-height: 90px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #map {
+            border-radius: 25px;
+        }
+    </style>
 </head>
 <body>
     <header id="encabezado">    
@@ -22,9 +58,49 @@
         </div>
         <hr noshade="noshade" size="3px"/> 
         <div id="container_principal">
-
+            <aside>
+                <form action="" method="post" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Información personal</legend>
+                        <div id="info_personal">
+                            <input type="text" placeholder="Nombre *">
+                            <input type="text" placeholder="Apellidos *"><br>
+                            <input type="email" placeholder="Email *">
+                            <input type="tel" placeholder="Teléfono *"><br>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Comentarios</legend>
+                        <div id="comentarios">
+                            <textarea placeholder="Comentarios *"></textarea>
+                        </div>
+                    </fieldset>
+                </form>
+            </aside>
+            <div id="mapa">
+                <h2>Barcelona</h2>
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1452.608204053718!2d2.185002812382632!3d41.45342300462093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bcfdad2100a9%3A0x3c4e7db0a61a83e0!2sInstitut%20Tecnol%C3%B2gic%20de%20Barcelona!5e0!3m2!1sca!2ses!4v1697539669226!5m2!1sca!2ses" width="600" height="450" style="border:2px solid #ccc;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Carrer d'Aiguablava, 121, 08033 Barcelona</p>
+                <p>67869768</p>
+            </div>
         </div>
-        
+        <footer>
+            <div id="footer_superior">
+                <div id="rrss">
+                    <p>FACEBOOK</p>        
+                    <p>X</p>
+                    <p>INSTAGRAM</p>
+                    <p>RRSS</p>
+                </div>
+                <div id="direccion">
+                    <p>Carrer d'Aiguablava 121</p>
+                    <p>08033 Barcelona</p>
+                </div>
+            </div>
+            <div id="footer_inferior">
+                <p id="copy">Copyright © 2023 - 2023</p>
+            </div>
+        </footer>
     </main>
 </body>
 </html>

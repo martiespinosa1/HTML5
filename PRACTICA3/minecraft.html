@@ -7,6 +7,25 @@
     <meta name="descripcion" content="La Pràctica 3 de HTML i CSS va sobre videojuegos">
     <link rel="icon" type="image/ico" href="img/favico.ico">
     <link rel="stylesheet" type="text/css" href="style.css"></link>
+
+    <style>
+        #foto {
+            width: 25%;
+        }
+
+        img {
+            border-radius: 10px;
+        }
+
+        #info_principal {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #texto {
+            padding: 1%;
+        }
+    </style>
 </head>
 <body>
     <header id="encabezado">    
@@ -22,9 +41,14 @@
         </div>
         <hr noshade="noshade" size="3px"/>
         <div id="container_principal">
-            <img src="img/mine.jpg" alt="Minecraft" width="100%">
-            <div>
-                <p>mine</p>
+            <div id="info_principal">
+                <div id="foto">
+                    <img src="img/mine.jpg" alt="Minecraft" width="100px">
+                </div>
+                <div id="texto">
+                    <p>Plataforma: PC</p>
+                    <p>Género: Mundo abierto</p>
+                </div>
             </div>
         </div>
         <footer>
