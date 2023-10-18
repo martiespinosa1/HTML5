@@ -47,12 +47,12 @@ table {
 
 @font-face {
   font-family: 'Kanit';
-  src: url('fonts/Kanit/Kanit-Regular.ttf') format('truetype');
+  src: url('../PRACTICA3/fonts/Kanit/Kanit-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Maven Pro';
-  src: url('fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf') format('truetype');
+  src: url('../PRACTICA3/fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf') format('truetype');
 }
 
 
@@ -64,13 +64,13 @@ table {
 
 
 #encabezado{
-    background-color: #0A91AB;
+    background-color: #171717;
     font-family: 'Kanit', 'Maven Pro', Helvetica, Arial, sans-serif;
 }
 
 h1 {
     text-align: center;
-    color: #FFC045;
+    color: #f5f5f5;
     padding: 3%;
     font-size: 80px;
 }
@@ -79,7 +79,7 @@ h1 {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: #FFC045;
+    background-color: #171717;
     padding: 1% 30%;
 }
 
@@ -89,13 +89,13 @@ h1 {
 }
 
 main {
-    background-color: #f7f5f3;
+    background-color: #171717;
 }
 
 #container_principal {
     width: 80%;
     margin-left: 10%;
-    background-color: #ffffff;
+    background-color: #171717;
     border-radius: 25px;
     margin: 5%  auto;
 }
@@ -103,16 +103,22 @@ main {
 
 #menu p {
     padding: 5px;
+    color: #bebebe;
 }
 
 #menu p:hover {
-  color: #0A91AB;
+  color: #f5f5f5;
+}
+
+#hr_abajo_menu {
+    margin-bottom: 0;
 }
 
 .titulos_apartados { 
     display: flex;
-    color: #0A91AB;
-    font-size: 20px;
+    color: #f5f5f5;
+    font-size: 33px;
+    font-weight: bold;
     padding: 10px;
 }
 
@@ -129,10 +135,10 @@ main {
 }
 
 .videojuego {
-    background-color: white;
+    background-color: #171717;
     border: 1.5px;
-    border-style: dashed;
-    border-color: #FFC045;
+    border-style: solid;
+    border-color: #f5f5f5;
     width: 30%;
     border-radius: 5px;
     margin: 15px;
@@ -149,7 +155,7 @@ img {
 
 .titulo_videojuego {
     text-align: left;
-    color: #FFC045;
+    color: #f5f5f5;
     font-size: 16px;
     font-weight: bold;
     padding-left: 2.5%;
@@ -158,16 +164,17 @@ img {
 
 .descripcion {
     font-size: 12px;
-    color: #8A8070;
+    color: #f5f5f5;
     padding: 2.5%;
     line-height: 1.5;
 }
 
 .mas_info {
     font-size: 12px;
-    width: 22%;
-    background-color: #FFC045;
-    border: 0;
+    width: 15%;
+    background-color: transparent;
+    color: #f5f5f5;
+    border: 1px solid #f5f5f5;
     border-radius: 5px;
     padding: 3px;
     margin-left: auto;
@@ -176,19 +183,27 @@ img {
     margin-bottom: 5px;
 }
 
+.mas_info:hover {
+    background-color: #f5f5f5;
+    color: #171717;
+}
+
 aside {
     display: flex;
     flex-direction: column;
-    background-color: rgba(127, 225, 255, 0.349);
+    background-color: #171717;
     width: 30%;
     margin-left: 1.5%;
-    border: 1.5px dashed black;
+    border: 1.5px solid #f5f5f5;
     border-radius: 5px;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .trucos {
+    padding: 1%;
+    padding-left: 2.5%;
     font-size: 11px;
+    color: #f5f5f5;
 }
 
 #parte2 {
@@ -203,7 +218,7 @@ aside {
 }
 
 #noticias {
-    background-color: rgba(127, 225, 255, 0.349);
+    background-color: #171717;
     width: 63.7%;
     margin-left: 30px;
 }
@@ -216,8 +231,8 @@ aside {
 }
 
 .noticia {
-    background-color: white;
-    border: 1.5px solid #0A91AB;
+    background-color: #171717;
+    border: 1.5px solid #f5f5f5;
     width: 47%;
     height: 44%;
     border-radius: 5px;
@@ -233,7 +248,7 @@ aside {
 
 .titulo_noticia {
     text-align: left;
-    color: #FFC045;
+    color: #f5f5f5;
     font-size: 14px;
     font-weight: bold;
     padding-left: 2.5%;
@@ -251,6 +266,7 @@ aside {
     font-size: 10px;
     padding: 2.5%;
     line-height: 1.5;
+    color: #f5f5f5;
 }
 
 #boton_noticia {
@@ -283,16 +299,18 @@ aside {
 }
 
 .nombres_personas {
-    color: #FFC045;
+    color: #f5f5f5;
 }
 
 .puntuacion {
     font-size: 10px;
+    color: #f5f5f5;
 }
 
 footer {
-    background-color: #847c6f;
+    background-color: #171717;
     padding: 1% 14%;
+    color: #bfbfbf;
 }
 
 #footer_superior {
