@@ -56,6 +56,9 @@ table {
 }
 
 
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Maven+Pro:wght@400;700&display=swap&#39;');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&family=Maven+Pro:wght@400;700&display=swap&#39;');
+
 
 * {
     margin: 0;
@@ -204,6 +207,7 @@ aside {
 #noticias {
     background-color: rgba(127, 225, 255, 0.349);
     width: 63.7%;
+    height: auto;
     margin-left: 30px;
 }
 
@@ -218,12 +222,13 @@ aside {
     background-color: white;
     border: 1.5px solid #0A91AB;
     width: 47%;
-    height: 44%;
+    height: 47%;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     overflow: hidden;   
     position: relative;
+    margin-top: 1.6%;
 }
 
 #texo_noticias {
@@ -291,7 +296,7 @@ aside {
 
 footer {
     background-color: #847c6f;
-    padding: 1% 14%;
+    padding: 1% 10% .5% 10%;
 }
 
 #footer_superior {
