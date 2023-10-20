@@ -9,38 +9,102 @@
     <link rel="stylesheet" type="text/css" href="style.css"></link>
 
     <style>
-
-        aside {
-            width: 30%;
+        #form {
+            width: 90%;
             height: 50%;
-            margin-left: auto;
+            
+            margin: 4%;
             padding: 10px;
-            background-color: rgba(255, 166, 0, 0.219);
-            border: 2px solid orange;
+            background-color: rgba(0, 119, 255, 0.219);
+            border: 2px solid rgba(0, 119, 255, 0.692);
             border-radius: 25px;
         }
 
+        #nuestro_equipo {
+            width: 93%;
+            color: white;
+            margin: 2%;
+            padding: 1%;
+            font-size: 21px;
+            text-align: center;
+            background-color: rgba(0, 119, 255, 0.5);
+            border-radius: 10px;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
         input {
-            width: 40%;
+            width: 43%;
             margin: 2%;
             padding: 1%;
             border: 2px solid #ccc;
             border-radius: 5px;
+            color: #747474;
+            font-size: 15px;
+        }
+
+        #check {
+            width: 25px;
+            height: 25px;
+        }
+
+        label {
+            color: #747474;
+            vertical-align: text-top;
+            margin-left: -1%;
+
+            
         }
 
         textarea {
             margin: 2%;
             padding: 1%;
-            width: 89%;
+            width: 93%;
             height: 90px;
             resize: vertical;
             min-height: 90px;
             border: 2px solid #ccc;
+            color: #747474;
+            font-size: 18px;
             border-radius: 5px;
+        }
+
+        #form_final {
+            margin-top: -1%;
+        }
+
+        #enviar {
+            width: 15%;
+            margin-left: 53.5%;
+            background-color: rgba(0, 119, 255, 0.5);
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            
         }
 
         #map {
             border-radius: 25px;
+        }
+
+        #mapa {
+            margin: 4%;
+        }
+
+        h2 {
+            font-size: 30px;
+            color: #747474;
+            margin-left: 1.5%;
+        }
+
+        #dir {
+            color: #747474;
+        }
+        
+        #tel {
+            color: #747474;
         }
     </style>
 </head>
@@ -58,10 +122,11 @@
         </div>
         <hr noshade="noshade" size="3px"/> 
         <div id="container_principal">
-            <aside>
+            <div id="form">
+                <p id="nuestro_equipo">Nuestro equipo <span>se pondrá en contacto contigo</span></p>
                 <form action="" method="post" enctype="multipart/form-data">
                     <fieldset>
-                        <legend>Información personal</legend>
+                        <!-- <legend>Información personal</legend> -->
                         <div id="info_personal">
                             <input type="text" placeholder="Nombre *">
                             <input type="text" placeholder="Apellidos *"><br>
@@ -70,18 +135,27 @@
                         </div>
                     </fieldset>
                     <fieldset>
-                        <legend>Comentarios</legend>
+                        <!-- <legend>Comentarios</legend> -->
                         <div id="comentarios">
                             <textarea placeholder="Comentarios *"></textarea>
                         </div>
                     </fieldset>
+                    <div id="form_final">
+                        <input id="check" type="checkbox"><label for="check">He leído y acepto <span>la política de privacidad *</span></label>
+                        <input id="enviar" type="submit" value="Enviar" disabled>
+                    </div>
                 </form>
-            </aside>
+            </div>
+            
             <div id="mapa">
                 <h2>Barcelona</h2>
-                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1452.608204053718!2d2.185002812382632!3d41.45342300462093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bcfdad2100a9%3A0x3c4e7db0a61a83e0!2sInstitut%20Tecnol%C3%B2gic%20de%20Barcelona!5e0!3m2!1sca!2ses!4v1697539669226!5m2!1sca!2ses" width="600" height="450" style="border:2px solid #ccc;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <p>Carrer d'Aiguablava, 121, 08033 Barcelona</p>
-                <p>67869768</p>
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1452.608204053718!2d2.185002812382632!3d41.45342300462093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bcfdad2100a9%3A0x3c4e7db0a61a83e0!2sInstitut%20Tecnol%C3%B2gic%20de%20Barcelona!5e0!3m2!1sca!2ses!4v1697539669226!5m2!1sca!2ses" width="99%" height="500" style="border:2px solid rgba(0, 119, 255, 0.692);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div id="dir">
+                    <p>Carrer d'Aiguablava, 121, 08033 Barcelona</p>
+                </div>
+                <div id="tel">
+                    <p>67869768</p>
+                </div>
             </div>
         </div>
         <footer>
