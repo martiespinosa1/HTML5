@@ -10,13 +10,11 @@
 
     <style>
         #form {
-            width: 90%;
-            height: 50%;
-            
-            margin: 4%;
+            width: 90%;           
+            margin: 5%;
             padding: 10px;
-            background-color: rgba(0, 119, 255, 0.219);
-            border: 2px solid rgba(0, 119, 255, 0.692);
+            background-color: rgb(0 119 255 / 0.219);
+            border: 2px solid rgb(0 119 255 / 0.692);
             border-radius: 25px;
         }
 
@@ -29,6 +27,7 @@
             text-align: center;
             background-color: rgba(0, 119, 255, 0.5);
             border-radius: 10px;
+            outline: 2px solid #ccc;
         }
 
         span {
@@ -40,7 +39,7 @@
             margin: 2%;
             padding: 1%;
             border: 2px solid #ccc;
-            border-radius: 5px;
+            border-radius: 10px;
             color: #747474;
             font-size: 15px;
         }
@@ -68,7 +67,7 @@
             border: 2px solid #ccc;
             color: #747474;
             font-size: 18px;
-            border-radius: 5px;
+            border-radius: 10px;
         }
 
         #form_final {
@@ -76,13 +75,13 @@
         }
 
         #enviar {
-            width: 15%;
-            margin-left: 53.5%;
+            width: 10%;
+            float: right;
+            margin: 1% 2.5% 0.5% 0;
             background-color: rgba(0, 119, 255, 0.5);
             color: white;
             font-size: 18px;
-            font-weight: bold;
-            
+            font-weight: bold;           
         }
 
         #map {
@@ -99,12 +98,29 @@
             margin-left: 1.5%;
         }
 
+        #iconos {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 2.5%;
+        }
+
         #dir {
             color: #747474;
+            width: 5%;
+        }
+
+        #dir img {
+            opacity: .6;
         }
         
         #tel {
             color: #747474;
+            width: 5%;
+            margin-left: 10%;
+        }
+
+        #tel img {
+            opacity: .6;
         }
     </style>
 </head>
@@ -114,13 +130,15 @@
         <hr noshade="noshade" size="3px"/>
     </header>
     <main>
-        <div id="menu">
-            <a href="index.html">INDEX</a>        
-            <a href="listado_v.html">LISTADO</a>
-            <a href="minecraft.html">MINE</a>
-            <a href="#encabezado">CONTACTO</a>
-        </div>
-        <hr noshade="noshade" size="3px"/> 
+        <div id="menu_com_hr">
+            <div id="menu">
+                <a href="index.html">INDEX</a>        
+                <a href="listado_v.html">LISTADO</a>
+                <a href="minecraft.html">MINE</a>
+                <a href="#encabezado">CONTACTO</a>
+            </div>
+            <hr noshade="noshade" size="3px"/> 
+        </div>        
         <div id="container_principal">
             <div id="form">
                 <p id="nuestro_equipo">Nuestro equipo <span>se pondrá en contacto contigo</span></p>
@@ -149,12 +167,16 @@
             
             <div id="mapa">
                 <h2>Barcelona</h2>
-                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1452.608204053718!2d2.185002812382632!3d41.45342300462093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bcfdad2100a9%3A0x3c4e7db0a61a83e0!2sInstitut%20Tecnol%C3%B2gic%20de%20Barcelona!5e0!3m2!1sca!2ses!4v1697539669226!5m2!1sca!2ses" width="99%" height="500" style="border:2px solid rgba(0, 119, 255, 0.692);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div id="dir">
-                    <p>Carrer d'Aiguablava, 121, 08033 Barcelona</p>
-                </div>
-                <div id="tel">
-                    <p>67869768</p>
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1452.608204053718!2d2.185002812382632!3d41.45342300462093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bcfdad2100a9%3A0x3c4e7db0a61a83e0!2sInstitut%20Tecnol%C3%B2gic%20de%20Barcelona!5e0!3m2!1sca!2ses!4v1697539669226!5m2!1sca!2ses" width="99%" height="600" style="border:2px solid rgba(0, 119, 255, 0.692);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div id="iconos">
+                    <div id="dir">
+                        <img src="img/gps.png" alt="gps" width="10%">
+                        <p>Aiguablava, 121, 08033 Barcelona</p>
+                    </div>
+                    <div id="tel">
+                        <img src="img/tel.png" alt="tel" width="10%">
+                        <p>67869768</p>
+                    </div>
                 </div>
             </div>
         </div>

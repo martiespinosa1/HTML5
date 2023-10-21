@@ -78,10 +78,13 @@ h1 {
     font-size: 80px;
 }
 
-#menu {
+#menu_com_hr {
     position: sticky;
     top: 0;
     z-index: 100;
+}
+
+#menu {
     display: flex;
     justify-content: space-evenly;
     background-color: #FFC045;
@@ -92,12 +95,17 @@ main {
     background-color: #f7f5f3;
 }
 
+div {
+    box-sizing: border-box;
+}
+
 #container_principal {
     width: 80%;
     margin-left: 10%;
     background-color: #ffffff;
     border-radius: 25px;
     margin: 5%  auto;
+    padding: 1%;
 }
 
 
