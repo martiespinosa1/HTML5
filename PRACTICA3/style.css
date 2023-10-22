@@ -174,7 +174,7 @@ img {
 
 .descripcion {
     font-size: 12px;
-    color: #8A8070;
+    color: #747474;
     padding: 2.5%;
     line-height: 1.5;
 }
@@ -182,9 +182,9 @@ img {
 .mas_info {
     font-size: 12px;
     width: 16%;
-    color: #8A8070;
+    color: #747474;
     background-color: #FFC045;
-    border: 1px solid #8A8070;
+    border: 1px solid #747474;
     border-radius: 5px;
     padding: 6px 1px;
     margin-left: auto;
@@ -195,7 +195,7 @@ img {
 }
 
 .mas_info:hover {
-    background-color: #8A8070;
+    background-color: #747474;
     color: #FFC045;
     border-color: #FFC045;
 }
@@ -248,7 +248,7 @@ aside {
     background-color: white;
     border: 1.5px solid #0A91AB;
     width: 47%;
-    height: 57%;
+    height: 57.8%;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -298,7 +298,6 @@ aside {
 }
 
 #parte3 {   
-    /* background-color: antiquewhite; */
     width: 98%;
     padding: 10px;
     margin-left: 1%;
