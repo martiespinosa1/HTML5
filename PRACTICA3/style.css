@@ -108,7 +108,6 @@ div {
     padding: 1%;
 }
 
-
 #menu a {
     padding: 5px;
     text-decoration: inherit;
@@ -190,8 +189,8 @@ aside {
     display: flex;
     flex-direction: column;
     background-color: rgba(127, 225, 255, 0.349);
-    width: 30%;
-    margin-left: 1.5%;
+    width: 23%;
+    margin-left: 2%;
     border: 1.5px dashed black;
     border-radius: 5px;
     align-items: center;
@@ -199,6 +198,7 @@ aside {
 
 .trucos {
     font-size: 11px;
+    font-weight: bold;
 }
 
 #parte2 {
@@ -214,14 +214,14 @@ aside {
 
 #noticias {
     /* background-color: rgba(127, 225, 255, 0.349); */
-    width: 63.7%;
-    height: auto;
-    margin-left: 30px;
+    width: 72.6%;
+    height: 780px;
+    margin-left: 25px;
 }
 
 #lista_noticias {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     height: 600px;
 }
@@ -230,13 +230,13 @@ aside {
     background-color: white;
     border: 1.5px solid #0A91AB;
     width: 47%;
-    height: 47%;
+    height: 57%;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     overflow: hidden;   
     position: relative;
-    margin-top: 1.6%;
+    margin-top: 2%;
 }
 
 #texo_noticias {
@@ -250,6 +250,7 @@ aside {
     font-weight: bold;
     padding-left: 2.5%;
     padding-top: 2.5%;
+    padding-right: 2.5%;
     text-align: center;
 }
 
@@ -260,14 +261,15 @@ aside {
 }
 
 .resumen_noticia {
-    font-size: 10px;
+    font-size: 11px;
+    font-weight: bold;
     padding: 2.5%;
     line-height: 1.5;
 }
 
 #boton_noticia {
     position: absolute;
-    bottom: 136px;
+    bottom: 195px;
     right: 0;
 
 }
@@ -276,6 +278,7 @@ aside {
     /* background-color: antiquewhite; */
     width: 98%;
     padding: 10px;
+    margin-left: 1%;
     text-align: center;
 }
 
