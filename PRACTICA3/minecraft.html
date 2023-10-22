@@ -9,28 +9,58 @@
     <link rel="stylesheet" type="text/css" href="style.css"></link>
 
     <style>
-        .foto {
-            width: 25%;
+        #container_principal {
+            background-image: url(img/descarga.png);            
         }
+
 
         img {
             border-radius: 10px;
-            margin-left: 5%;
-            margin-top: 5%;
         }
-
-        #info_principal {
+        
+        .info_principal {
+            margin: 2.5%;
             display: flex;
             flex-wrap: wrap;
+            /* border: 3px solid #4d4d4d;
+            border-radius: 13px; */
+            flex-direction: row;
+        }
+
+        .info_principal img {
+            /* border-radius: 10px 0 0 10px; */
+            width: 380px;
+            height: 100%;
         }
 
         .texto {
+            width: 65%;
             padding: 1%;
-            margin-left: 1%;
+            margin-left: 2%;
+            background-color: #4b4b4b60;
+            border-radius: 10px;
+            line-height: 1.5;
+        }
+
+        .texto2 {
+            width: 65%;
+            padding: 1%;
+            margin-right: 2%;          
+            background-color: #e6e6e650;
+            border-radius: 10px;
+            line-height: 1.5;
+        }
+
+        #texto3 {
+            color: #dadada;
         }
 
         p {
             margin: 1%;
+        }
+
+        .parrafo {
+            color: #4d4d4d;
         }
 
         .negrita {
@@ -40,7 +70,7 @@
         }
 
         .gris {
-            color: #8b8b8b;
+            color: #dadada;
             font-size: large;
         }
     </style>
@@ -61,7 +91,7 @@
             <hr noshade="noshade" size="3px"/>
         </div>        
         <div id="container_principal">
-            <div id="info_principal">
+            <div class="info_principal">
                 <div class="foto">
                     <img src="img/mine.jpg" alt="Minecraft" width="100px">
                 </div>
@@ -70,15 +100,25 @@
                     <p><span class="negrita">Plataforma: </span><span class="gris">PC, PlayStation, Xbox, Nintendo, Android, iOS</span></p>
                     <p><span class="negrita">Género: </span><span class="gris">Mundo abierto</span></p>
                     <p><span class="negrita">Desarrollador: </span><span class="gris">Markus Persson, "Notch"</span></p>
+                    <p><span class="negrita">Distribuidor: </span><span class="gris">Mojang Studios</span></p>
+                </div>          
+            </div>
+            <div class="info_principal">                
+                <div class="texto2">
+                    <p class="parrafo">Minecraft es un juego de mundo abierto que ofrece una experiencia única en cada partida. Cada vez que inicias un nuevo juego, se genera un mundo completamente nuevo y diferente al anterior. Puedes explorar este mundo, descubriendo poblados, animales y fenómenos naturales como volcanes y cuevas. Uno de los principales objetivos del juego es recolectar materiales para construir objetos y mejorar tus herramientas. Con cientos de objetos y recetas disponibles, Minecraft ofrece una amplia variedad de posibilidades para que los jugadores exploren y descubran nuevas formas de jugar.</p>                    
                 </div>
                 <div class="foto">
-                    <img src="img/mine.jpg" alt="mine" width="100px">
-                </div>
-                <div class="texto">
-                    <p>Marvel's Spider-Man 2 es una aventura de acción a cargo de Insomniac Games y Sony Interactive Entertainment para PlayStation 5 en la que Peter Parker y Miles Morales deben enfrentarse a la amenaza de Venom, Kraven el Cazador y el Lagarto, entre otros villanos. Balancéate, salta y usa las nuevas alarañas para recorrer la Nueva York de Marvel, cambia rápidamente entre Peter Parker y Miles Morales para experimentar historias diferentes y nuevos poderes épicos, y haz frente al icónico villano Venom que amenaza con destruir sus vidas, su ciudad y a sus seres queridos.</p>
-                    
-                </div>
+                    <img src="img/casa1.jpeg" alt="Minecraft" width="200px">
+                </div>          
             </div>
+            <div class="info_principal">    
+                <div class="foto">
+                    <img src="img/torre.jpg" alt="Minecraft" width="100px">
+                </div>            
+                <div class="texto" id="texto3">
+                    <p class="parrafo" id="texto3">Minecraft cuenta con una amplia variedad de bloques disponibles para su uso. Estos bloques tienen diferentes usos y funcionalidades en el juego. Por ejemplo, puedes utilizar repetidores y raíles para crear sistemas de transporte automatizados, lámparas para iluminar tus construcciones o mecanismos y sensores para crear puertas automáticas. La diversidad de bloques en Minecraft permite a los jugadores utilizar su creatividad para construir estructuras complejas y funcionales. Con decenas de bloques disponibles, los jugadores tienen la libertad de experimentar y crear todo tipo de construcciones en el juego</p>       
+                </div>                          
+            </div>            
         </div>
         <footer>
             <div id="footer_superior">
