@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mi formulario</title>
+    </head>
+    <body>
+        <form action="" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label>Nombre: </label><input type="text"><br>
+                <label>Edad: </label>
+                <select aria-placeholder="">
+                    <option value="0"></option>
+                    <option value="1">1-10</option>
+                    <option value="2">11-20</option>
+                    <option value="3">21-30</option>
+                    <option value="4">31-40</option>
+                </select><br>
+            </fieldset>
+            <fieldset>
+                <legend>Aficiones</legend>
+                <label>Programar en Kotlin </label><input type="checkbox" name="Kotlin"><br>
+                <label>Maquetar páginas web </label><input type="checkbox" name="Web"><br>
+                <label>Crear hojas de estilo CSS </label><input type="checkbox" name="CSS"><br>
+            </fieldset>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
