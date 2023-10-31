@@ -19,3 +19,8 @@ function lorem() {
 }
 
 // EXERCICI 4
+function obtenirAtributs() {
+    let element = document.getElementById("itb");
+    let atributes = element.attributes;
+    console.log(atributes);
+}
