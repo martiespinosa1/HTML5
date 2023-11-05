@@ -24,3 +24,12 @@ function obtenirAtributs() {
     let atributes = element.attributes;
     console.log(atributes);
 }
+
+// EXERCICI 5
+function insertarFilaAdalt() {
+    document.getElementById('Taula').insertRow(0).innerHTML = '<td>fila 0 cel·la 1</td><td>fila 0 cel·la 2</td>'
+}
+function insertarFilaAbaix() {
+    document.getElementById('Taula').insertRow(-1).innerHTML = '<td>fila 3 cel·la 1</td><td>fila 3 cel·la 2</td>'
+}
+
