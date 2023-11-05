@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: margin-box;
+}
+
+body {
+    background-color: rgb(50, 50, 50);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: antiquewhite; */
+    width: 40%;    
+    margin: 5% auto;
+}
+
+div {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    background-color: gray;
+    border-radius: 10%;
+    border: 5px solid lightgray;
+}
