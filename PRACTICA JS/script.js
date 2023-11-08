@@ -24,21 +24,24 @@ function comprobar() {
             var numUsuari = document.getElementById("numUsuari").value;
             numUsuariSplit = numUsuari.split('')
             for (let i = 0; i < 5; i++) {
-                const newdiv = document.createElement("div");
-                newdiv.className = "newdiv"
-                document.querySelector("main").appendChild(newdiv);
-                newdiv.classList.add("newdiv");
-
-                newdiv.innerHTML = numUsuariSplit[i]
-
-                if (numUsuariSplit[i] === numerorandomSplit[i]) {
-                    newdiv.style.backgroundColor = "#00cd00"
-                    numerosCorrectes++
-                } else {
+                setTimeout(function(){
+                  const newdiv = document.createElement("div");
+                  newdiv.className = "newdiv";
+                  document.querySelector("main").appendChild(newdiv);
+                  newdiv.classList.add("newdiv");
+                  newdiv.innerHTML = numUsuariSplit[i];
+              
+                  if (numUsuariSplit[i] === numerorandomSplit[i]) {
+                    newdiv.style.backgroundColor = "#00cd00";
+                    numerosCorrectes++;
+                  } else {
                     for (let j = 0; j < 5; j++) {
-                        if (numUsuariSplit[i] === numerorandomSplit[j]) newdiv.style.backgroundColor = "#ffd731"
-                    }   
-                }
+                      if (numUsuariSplit[i] === numerorandomSplit[j]) {
+                        newdiv.style.backgroundColor = "#ffd731";
+                      }
+                    }
+                  }
+                }, i * 200);
             }
             document.getElementById("numUsuari").value = ""
             intents++
