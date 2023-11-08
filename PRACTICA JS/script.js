@@ -69,9 +69,7 @@ function comprobar() {
                 } case 4: {
                     document.getElementById("rojo").innerHTML = "Quinto y último intento, surte!"
                     break
-                } default: document.getElementById("rojo").innerHTML = "HAS PERDIDO"
-                    break
-        
+                } default: document.getElementById("rojo").innerHTML = "HAS PERDIDO"        
             }
         }
     } else document.getElementById("rojo").innerHTML = "Alto, tienes que entrar 5 números!"    
