@@ -25,7 +25,7 @@ function comprobar() {
             var numUsuari = document.getElementById("numUsuari").value;
             numUsuariSplit = numUsuari.split('');
             for (let i = 0; i < 5; i++) {
-              setTimeout(function(){
+              setTimeout(function(){ // comprueba cada numero con un delay de 200ms entre cada una
                 const newdiv = document.createElement("div");
                 newdiv.className = "newdiv";
                 document.querySelector("main").appendChild(newdiv);
@@ -52,8 +52,9 @@ function comprobar() {
                 }, 100);
               }, i * 200);
             }
-            document.getElementById("numUsuari").value = "";
-            document.getElementById("numUsuari").focus();
+            // borra el contenido de numUsuari, le pone el foco e incrementa el contador de intents
+            numUsuari.value = "";
+            numUsuari.focus();
             intents++;
           }
         
@@ -62,8 +63,9 @@ function comprobar() {
             if (numUsuariSplit[i] === numerorandomSplit[i]) numerosCorrectes++;            
           }
 
-
+        
         if (numerosCorrectes === 5) {
+            // da mensaje de vicoria, escribe el numero el los divs de arriba y desactiba el boton comprobar
             document.getElementById("rojo").innerHTML = "¡¡¡HAS GANADO!!!" 
             document.getElementById("rojo").style.backgroundColor = "#00cd00"    
             intents = 5        
@@ -75,7 +77,7 @@ function comprobar() {
             document.getElementById("numUsuari").value = ""
             document.querySelector("button").disabled = true
 
-        } else {
+        } else { // informa de por que intento va
             switch (intents) {
                 case 1: {
                     document.getElementById("rojo").innerHTML = "Segundo intento, suerte!" 
