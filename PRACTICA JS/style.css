@@ -66,6 +66,7 @@ section p, section input {
 section input {
     color: black;
     font-weight: 400;
+    appearance: textfield;
 }
 
 button {

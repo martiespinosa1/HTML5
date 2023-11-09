@@ -51,11 +51,18 @@ function comprobar() {
               }, i * 200);
             }
             document.getElementById("numUsuari").value = "";
+            document.getElementById("numUsuari").focus();
             intents++;
           }
-          
+        
+          // comprueba cuantos numeros correctos hay
+          for (let i = 0; i < 5; i++) {
+            if (numUsuariSplit[i] === numerorandomSplit[i]) numerosCorrectes++;            
+          }
+
+
         if (numerosCorrectes === 5) {
-            document.getElementById("rojo").innerHTML = "¡¡¡ HAS GANADO !!!" 
+            document.getElementById("rojo").innerHTML = "¡¡¡HAS GANADO!!!" 
             document.getElementById("rojo").style.backgroundColor = "#00cd00"    
             intents = 5        
             
@@ -83,5 +90,5 @@ function comprobar() {
                 } default: document.getElementById("rojo").innerHTML = "HAS PERDIDO"        
             }
         }
-    } else document.getElementById("rojo").innerHTML = "Alto, tienes que entrar 5 números!"    
+    } else document.getElementById("rojo").innerHTML = "Alto, ¡tienes que entrar 5 números!"    
 }
