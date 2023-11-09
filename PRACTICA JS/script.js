@@ -7,13 +7,14 @@ function generarNumeroAleatorio() {
     return numeroAleatorio;
 }
 
-// Llamar a la función cuando se cargue el documento
+// Llamar a la función generarNumeroAleatorio cuando se cargue la página
 document.addEventListener("DOMContentLoaded", function() {
     var numeroRandom = generarNumeroAleatorio();
     numerorandomSplit = numeroRandom.split("")
-    console.log(numeroRandom);
+    console.log(numeroRandom); // imprime el numeroRandom por consola
 });
 
+// inicializa intents y numerosCorrectes a 0
 var intents = 0;
 var numerosCorrectes = 0
 
@@ -31,6 +32,7 @@ function comprobar() {
                 newdiv.classList.add("newdiv");
                 newdiv.innerHTML = numUsuariSplit[i];
                 
+                // mira si el numero es correcto o si esta pero no en su sitio
                 if (numUsuariSplit[i] === numerorandomSplit[i]) {
                   newdiv.style.backgroundColor = "#00cd00";
                   numerosCorrectes++;
@@ -66,7 +68,7 @@ function comprobar() {
             document.getElementById("rojo").style.backgroundColor = "#00cd00"    
             intents = 5        
             
-            const divs = document.querySelectorAll("#arriba div");
+            const divs = document.querySelectorAll("#CODIGO div");
             for (let k = 0; k < divs.length; k++) {
                 divs[k].innerHTML = numerorandomSplit[k];
             }          
