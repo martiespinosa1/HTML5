@@ -53,8 +53,8 @@ function comprobar() {
               }, i * 200);
             }
             // borra el contenido de numUsuari, le pone el foco e incrementa el contador de intents
-            numUsuari.value = "";
-            numUsuari.focus();
+            document.getElementById("numUsuari").value = "";
+            document.getElementById("numUsuari").focus();
             intents++;
           }
         
