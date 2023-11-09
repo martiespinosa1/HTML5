@@ -22,31 +22,39 @@ function comprobar() {
         numerosCorrectes = 0
         if (intents < 5) {
             var numUsuari = document.getElementById("numUsuari").value;
-            numUsuariSplit = numUsuari.split('')
+            numUsuariSplit = numUsuari.split('');
             for (let i = 0; i < 5; i++) {
-                setTimeout(function(){
-                  const newdiv = document.createElement("div");
-                  newdiv.className = "newdiv";
-                  document.querySelector("main").appendChild(newdiv);
-                  newdiv.classList.add("newdiv");
-                  newdiv.innerHTML = numUsuariSplit[i];
-              
-                  if (numUsuariSplit[i] === numerorandomSplit[i]) {
-                    newdiv.style.backgroundColor = "#00cd00";
-                    numerosCorrectes++;
-                  } else {
-                    for (let j = 0; j < 5; j++) {
-                      if (numUsuariSplit[i] === numerorandomSplit[j]) {
-                        newdiv.style.backgroundColor = "#ffd731";
-                      }
+              setTimeout(function(){
+                const newdiv = document.createElement("div");
+                newdiv.className = "newdiv";
+                document.querySelector("main").appendChild(newdiv);
+                newdiv.classList.add("newdiv");
+                newdiv.innerHTML = numUsuariSplit[i];
+                
+                if (numUsuariSplit[i] === numerorandomSplit[i]) {
+                  newdiv.style.backgroundColor = "#00cd00";
+                  numerosCorrectes++;
+                } else {
+                  for (let j = 0; j < 5; j++) {
+                    if (numUsuariSplit[i] === numerorandomSplit[j]) {
+                      newdiv.style.backgroundColor = "#ffd731";
                     }
                   }
-                }, i * 200);
+                }
+                
+                // Add fade-in effect
+                newdiv.style.opacity = 0;
+                newdiv.style.transition = "opacity 0.5s ease";
+                setTimeout(function() {
+                  newdiv.style.opacity = 1;
+                }, 100);
+              }, i * 200);
             }
-            document.getElementById("numUsuari").value = ""
-            intents++
-        
-        } if (numerosCorrectes === 5) {
+            document.getElementById("numUsuari").value = "";
+            intents++;
+          }
+          
+        if (numerosCorrectes === 5) {
             document.getElementById("rojo").innerHTML = "¡¡¡ HAS GANADO !!!" 
             document.getElementById("rojo").style.backgroundColor = "#00cd00"    
             intents = 5        
