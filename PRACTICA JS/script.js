@@ -7,13 +7,14 @@ function generarNumeroAleatorio() {
     return numeroAleatorio;
 }
 
-// Llamar a la función cuando se cargue el documento
+// Llamar a la función generarNumeroAleatorio cuando se cargue la página
 document.addEventListener("DOMContentLoaded", function() {
     var numeroRandom = generarNumeroAleatorio();
     numerorandomSplit = numeroRandom.split("")
-    console.log(numeroRandom);
+    console.log(numeroRandom); // imprime el numeroRandom por consola
 });
 
+// inicializa intents y numerosCorrectes a 0
 var intents = 0;
 var numerosCorrectes = 0
 
@@ -24,13 +25,14 @@ function comprobar() {
             var numUsuari = document.getElementById("numUsuari").value;
             numUsuariSplit = numUsuari.split('');
             for (let i = 0; i < 5; i++) {
-              setTimeout(function(){
+              setTimeout(function(){ // comprueba cada numero con un delay de 200ms entre cada una
                 const newdiv = document.createElement("div");
                 newdiv.className = "newdiv";
                 document.querySelector("main").appendChild(newdiv);
                 newdiv.classList.add("newdiv");
                 newdiv.innerHTML = numUsuariSplit[i];
                 
+                // mira si el numero es correcto o si esta pero no en su sitio
                 if (numUsuariSplit[i] === numerorandomSplit[i]) {
                   newdiv.style.backgroundColor = "#00cd00";
                   numerosCorrectes++;
@@ -50,23 +52,32 @@ function comprobar() {
                 }, 100);
               }, i * 200);
             }
+            // borra el contenido de numUsuari, le pone el foco e incrementa el contador de intents
             document.getElementById("numUsuari").value = "";
+            document.getElementById("numUsuari").focus();
             intents++;
           }
-          
+        
+          // comprueba cuantos numeros correctos hay
+          for (let i = 0; i < 5; i++) {
+            if (numUsuariSplit[i] === numerorandomSplit[i]) numerosCorrectes++;            
+          }
+
+        
         if (numerosCorrectes === 5) {
-            document.getElementById("rojo").innerHTML = "¡¡¡ HAS GANADO !!!" 
+            // da mensaje de vicoria, escribe el numero el los divs de arriba y desactiba el boton comprobar
+            document.getElementById("rojo").innerHTML = "¡¡¡HAS GANADO!!!" 
             document.getElementById("rojo").style.backgroundColor = "#00cd00"    
             intents = 5        
             
-            const divs = document.querySelectorAll("#arriba div");
+            const divs = document.querySelectorAll("#CODIGO div");
             for (let k = 0; k < divs.length; k++) {
                 divs[k].innerHTML = numerorandomSplit[k];
             }          
             document.getElementById("numUsuari").value = ""
             document.querySelector("button").disabled = true
 
-        } else {
+        } else { // informa de por que intento va
             switch (intents) {
                 case 1: {
                     document.getElementById("rojo").innerHTML = "Segundo intento, suerte!" 
@@ -83,5 +94,5 @@ function comprobar() {
                 } default: document.getElementById("rojo").innerHTML = "HAS PERDIDO"        
             }
         }
-    } else document.getElementById("rojo").innerHTML = "Alto, tienes que entrar 5 números!"    
+    } else document.getElementById("rojo").innerHTML = "Alto, ¡tienes que entrar 5 números!"    
 }
