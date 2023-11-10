@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX 2</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>TO-DO LIST</h1>
+
+    <form id="formulari" action="javascript: anadirTarea()">
+        <input type="text" name="tarea">
+        <select name="prioridad">
+            <option value="1">Prioridad baja</option>
+            <option value="2">Prioridad media</option>
+            <option value="3">Prioridad alta</option>
+        </select>
+        <input type="submit" value="Añadir tarea">
+    </form>
+
+    <main>
+        <p id="default">No hi ha tasques</p>
+    </main>
+</body>
+</html>

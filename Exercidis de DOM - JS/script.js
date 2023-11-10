@@ -33,3 +33,29 @@ function insertarFilaAbaix() {
     document.getElementById('Taula').insertRow(-1).innerHTML = '<td>fila 3 cel·la 1</td><td>fila 3 cel·la 2</td>'
 }
 
+// EXERCICI 6
+function modificarValor() {
+    document.getElementsByTagName("td")[5].innerHTML = "Valor modificado"
+}
+function modificarValorUsuari() {
+    let fila = window.prompt("De quina fila mols vodificar el valor? (0 o 1)");
+    let columna = window.prompt("De quina columna vols modificar el valor? (0 o 1)");
+    document.getElementsByTagName("table")[1].rows[fila].cells[columna].innerHTML = "Valor modificado";
+}
+
+// EXERCICI 7
+function crearTablaPersonalizada() {
+    let filas = parseInt(window.prompt("De quantes files vols la taula?"));
+    let columnas = parseInt(window.prompt("De quantes columnes vols la taula?"));
+    let miTabla = document.getElementsByTagName("table")[2];
+    miTabla.innerHTML = ""
+
+    for (let i = 0; i < filas; i++) {
+        let filasTabla = document.createElement("tr");
+        for (let j = 0; j < columnas; j++) {
+            let celaTabla = document.createElement("td");
+            miTabla.appendChild(celaTabla);
+        }
+        miTabla.appendChild(filasTabla)
+    }
+}
