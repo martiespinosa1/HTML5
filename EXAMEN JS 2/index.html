@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXAMEN JS 2</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <form action="javascript: crearRecurs()">
+            <input type="text" placeholder="Introdueix el títol del recurs"><br>
+            <input type="url" placeholder="Introdueix la URL del recurs"><br>
+            <label for="desplegable">Módul: </label>
+            <select id="desplegable">
+                <option>M02 - Bases de dades</option>
+                <option>M03 - Programació</option>
+                <option>M04 - Llenguatge de marques</option>
+            </select><br>
+            <button>Crear recurs</button>
+        </form>
+        <button onclick="filtrarRecursos()">Filtrar recursos</button>
+    </header>
+    <main>
+        <p id="inicial">No hi han recursos</p>
+    </main>
+    <p id="contador"></p>
+</body>
+</html>
